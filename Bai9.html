@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<title>Bai 9</title>
+</header>
+<body>
+  <script language="javascript">
+		var n = parseInt(prompt("Nhập số n bất kì: "));
+		if(n*0 !== 0 || n < 0) {
+			alert("Input không hợp lệ");
+		}
+		else if(n === 0) {
+			alert("Tổng các số chia hết cho 3 của số 0 là 0 ");
+		}
+		else {
+			var result = 0;
+			var i = 3;
+			while (i <= n) {
+				if ((i % 3) === 0) {
+					result = result + i;
+				}
+				i = i+3;
+			}
+			alert("Tổng các số chia hết cho 3 trong khoảng từ 0 đến " + n + " là: " + result);
+		}
+	</script>
+</body>
+</html>
